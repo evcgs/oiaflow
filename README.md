@@ -90,14 +90,6 @@ AI自主完成「规划→执行→反思→优化」闭环：
 | 执行耗时 | 60分钟+多次干预 | 25分钟零干预 | +140% |
 | 交付符合度 | 本地Markdown文件 | 结构化内容可直接生成飞书文档 | +90% |
 ## 📦 部署方式
-### Docker一键部署
-```bash
-docker run -d \
-  --name oia-framework \
-  -p 18789:18789 \
-  -v ~/.openclaw/oia-config:/app/config \
-  openclaw/oia-framework:v1.0
-```
 ### 方式1：OpenClaw技能市场安装（推荐）
 1. 打开OpenClaw控制面板 → 技能市场
 2. 搜索「OIAFlow」
