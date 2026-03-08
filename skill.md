@@ -1,14 +1,22 @@
 ---
 name: oiaflow
-description: "OIAFlow目标驱动AI Agent协同工作流框架 - 实现「人类定目标、立规则，AI做执行、找方法」的高效人机协同模式，适用于全场景AI应用。"
-category: "工作流"
-tags: ["OIA", "目标驱动", "多Agent", "AI协作", "效率工具"]
-version: "1.0.0"
-author: "OpenClaw Community"
-minimum_openclaw_version: "0.8.0"
+description: OIAFlow目标驱动AI Agent协同工作流框架 - 实现「人类定目标、立规则，AI做执行、找方法」的高效人机协同模式，适用于全场景AI应用。
+category: 工作流
+tags:
+  - OIA
+  - 目标驱动
+  - 多Agent
+  - AI协作
+  - 效率工具
+version: 1.0.0
+author: OpenClaw Community
+minimum_openclaw_version: 0.8.0
 ---
-# OIAFlow Skill
-目标驱动AI Agent协同工作流框架，基于OIA（Outcome-First + Intent-Driven + Autonomy-with-Guardrails）方法论，实现高效人机协同。
+# OIAFlow
+## 描述
+目标驱动AI Agent协同工作流框架，基于OIA（Outcome-First + Intent-Driven + Autonomy-with-Guardrails）方法论，实现「人类定目标、立规则，AI做执行、找方法」的高效人机协同模式。
+## 适用场景
+适用于信息调研、项目规划、文档写作、代码开发、日程安排等全场景AI应用。
 ---
 ## 🎯 核心功能
 ### 1. 标准化目标确认
