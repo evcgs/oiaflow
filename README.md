@@ -98,11 +98,38 @@ docker run -d \
   -v ~/.openclaw/oia-config:/app/config \
   openclaw/oia-framework:v1.0
 ```
-### 手动安装
-1. 下载技能包到OpenClaw技能目录
-2. 配置Agent角色和权限
-3. 加载模板库和规则库
-4. 重启OpenClaw网关即可使用
+### 方式1：OpenClaw技能市场安装（推荐）
+1. 打开OpenClaw控制面板 → 技能市场
+2. 搜索「OIAFlow」
+3. 点击「安装」即可自动完成部署
+4. 安装后在技能配置页面设置Agent角色映射
+### 方式2：本地技能包安装
+```bash
+# 1. 下载技能包到OpenClaw技能目录
+cd ~/.openclaw/skills
+git clone https://github.com/evcgs/oiaflow.git
+# 2. 安装依赖
+cd oiaflow
+npm install
+# 3. 重启OpenClaw网关
+openclaw gateway restart
+# 4. 配置
+打开OpenClaw控制面板 → 技能 → OIAFlow → 设置：
+- 总协调者Agent：main（默认）
+- PMAgent：pmagent
+- DocAgent：docagent
+- CodeAgent：codeagent
+- CalendarAgent：calendaragent
+```
+### 方式3：Docker一键部署
+```bash
+docker run -d \
+  --name oiaflow \
+  -p 18789:18789 \
+  -v ~/.openclaw/oiaflow-config:/app/config \
+  -e OPENCLAW_API_KEY=your_openclaw_api_key \
+  evcgs/oiaflow:v1.0
+```
 ## 🎯 适用场景
 - ✅ 信息调研、政策分析、市场研究
 - ✅ 文档写作、报告生成、内容创作
