@@ -150,8 +150,3 @@ MIT License
 ### 联系我们
 - **微信**：添加微信 ，备注「OIAFlow+来意」
 ![wx.png](wx.png)
-- **GitHub Issues**：https://github.com/evcgs/oiaflow/issues
-- **社区交流**：https://discord.gg/openclaw
----
-**维护团队**：OpenClaw社区
-**反馈渠道**：https://github.com/evcgs/oiaflow/issues
