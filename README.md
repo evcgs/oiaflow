@@ -142,5 +142,14 @@ OIA体系天然支持多Agent协同：
 ## 📄 许可证
 MIT License
 ---
+## 💬 交流与支持
+### 微信交流群
+扫码加入OIAFlow用户交流群，获取最新更新、使用技巧和技术支持：
+> （群二维码已过期，请添加下方微信备注来意拉群）
+### 联系我们
+- **微信**：添加微信 `xxxxxx`，备注「OIAFlow+来意」
+- **GitHub Issues**：https://github.com/evcgs/oiaflow/issues
+- **社区交流**：https://discord.gg/openclaw
+---
 **维护团队**：OpenClaw社区
-**反馈渠道**：https://github.com/openclaw/openclaw-skills/issues
+**反馈渠道**：https://github.com/evcgs/oiaflow/issues
