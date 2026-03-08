@@ -1,0 +1,108 @@
+{
+  "name": "oiaflow",
+  "version": "1.0.0",
+  "description": "OIAFlow - 目标驱动AI Agent协同工作流框架，实现「人类定目标、立规则，AI做执行、找方法」的高效人机协同模式",
+  "author": "OpenClaw Community",
+  "license": "MIT",
+  "homepage": "https://github.com/openclaw/openclaw-skills/tree/main/oia-framework",
+  "tags": ["AI协作", "目标驱动", "多Agent", "效率工具"],
+  "capabilities": [
+    "目标标准化确认",
+    "意图智能传递",
+    "风险自动分级",
+    "权限动态匹配",
+    "多Agent协同调度",
+    "结果自动校验",
+    "迭代优化机制"
+  ],
+  "dependencies": {
+    "openclaw": ">=0.8.0",
+    "node": ">=20.0.0"
+  },
+  "configuration": {
+    "type": "object",
+    "properties": {
+      "default_risk_level": {
+        "type": "string",
+        "enum": ["low", "medium", "high"],
+        "default": "low",
+        "description": "默认风险等级"
+      },
+      "auto_confirm_low_risk": {
+        "type": "boolean",
+        "default": true,
+        "description": "低风险任务是否自动确认执行"
+      },
+      "agent_roles": {
+        "type": "object",
+        "description": "Agent角色配置",
+        "default": {
+          "orchestrator": "main",
+          "pm": "pmagent",
+          "doc": "docagent",
+          "code": "codeagent",
+          "calendar": "calendaragent"
+        }
+      },
+      "template_path": {
+        "type": "string",
+        "default": "./templates",
+        "description": "模板文件路径"
+      }
+    }
+  },
+  "commands": [
+    {
+      "name": "oia:init",
+      "description": "初始化OIA体系，加载模板和规则",
+      "parameters": {}
+    },
+    {
+      "name": "oia:confirm-target",
+      "description": "生成标准化目标确认书",
+      "parameters": {
+        "task": {
+          "type": "string",
+          "description": "用户原始任务描述"
+        }
+      }
+    },
+    {
+      "name": "oia:execute",
+      "description": "按照OIA流程执行任务",
+      "parameters": {
+        "target_id": {
+          "type": "string",
+          "description": "确认后的目标ID"
+        }
+      }
+    },
+    {
+      "name": "oia:status",
+      "description": "查询任务执行状态",
+      "parameters": {
+        "task_id": {
+          "type": "string",
+          "description": "任务ID"
+        }
+      }
+    }
+  ],
+  "events": [
+    "oia:target_confirmed",
+    "oia:task_started",
+    "oia:task_completed",
+    "oia:task_failed",
+    "oia:needs_confirmation"
+  ],
+  "permissions": [
+    "sessions_send",
+    "sessions_spawn",
+    "memory_write",
+    "file_read",
+    "file_write"
+  ],
+  "runtime": "node",
+  "entry": "src/index.js",
+  "skills": []
+}
