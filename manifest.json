@@ -1,0 +1,27 @@
+{
+  "id": "oiaflow",
+  "name": "OIAFlow目标驱动协同框架",
+  "version": "1.0.0",
+  "description": "实现「人类定目标、立规则，AI做执行、找方法」的高效人机协同模式，适用于全场景AI应用",
+  "author": "OpenClaw社区",
+  "categories": ["工作流", "多Agent", "效率工具"],
+  "keywords": ["OIA", "目标驱动", "多Agent协同", "AI工作流"],
+  "requirements": {
+    "openclaw": ">=1.0.0",
+    "node": ">=16.0.0"
+  },
+  "permissions": [
+    "file:read",
+    "file:write",
+    "sessions_spawn",
+    "sessions_send",
+    "memory_search"
+  ],
+  "install": {
+    "steps": [
+      "npm install"
+    ]
+  },
+  "homepage": "https://github.com/evcgs/oiaflow",
+  "repository": "https://github.com/evcgs/oiaflow.git"
+}

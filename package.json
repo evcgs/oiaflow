@@ -1,26 +1,18 @@
 {
-  "name": "openclaw-skill-oiaflow",
+  "name": "oiaflow",
   "version": "1.0.0",
-  "description": "OIAFlow - 目标驱动AI Agent协同工作流框架",
-  "main": "src/index.js",
+  "description": "OIAFlow目标驱动AI Agent协同工作流框架",
+  "main": "scripts/main.mjs",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@openclaw/sdk": "^0.8.0",
-    "handlebars": "^4.7.8"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "openclaw",
-    "openclaw-skill",
-    "oiaflow",
-    "ai-agent",
-    "workflow",
-    "collaboration"
+    "OIA",
+    "目标驱动",
+    "多Agent",
+    "AI协作",
+    "工作流",
+    "openclaw-skill"
   ],
   "author": "OpenClaw Community",
   "license": "MIT"
